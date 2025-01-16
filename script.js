@@ -109,4 +109,12 @@ function createPlayer(name, symbol) {
     return { name, symbol };
 }
 
+// TESTING
+const cellList = document.querySelectorAll(".gameboard > div");
+for (const cell of cellList) {
+    const value = document.createElement("span");
+    value.textContent = "X";
+    value.classList.add("X");
 
+    cell.appendChild(value);
+}
