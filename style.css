@@ -1,15 +1,16 @@
 * {
     font-family: sans-serif;
 }
-
 body {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: space-evenly;
 }
-.X, .O {
-    font-size: 10rem;
+button {
+    font-size: 24px;
+    margin-top: 24px;
+    padding: 16px 48px;
 }
 .player-info {
     display: flex;
@@ -32,6 +33,22 @@ body {
     justify-content: center;
     background-color: white;
     transition: 0.3s;
+    font-size: 10rem;
+}
+.modal {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+.modal > p {
+    width: 70%;
+}
+.hidden {
+    display: none;
 }
 
 /* Animations */

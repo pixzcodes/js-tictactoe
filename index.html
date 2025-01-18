@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <div class="player-info" id="playerone">
         <h2>Player 1</h2>
@@ -14,7 +16,7 @@
         <input type="text" id="playerone-name">
         <p>You are X's</p>
     </div>
-    <div class="gameboard">
+    <div class="gameboard hidden">
         <div class="row-top col-left"></div>
         <div class="row-top col-center"></div>
         <div class="row-top col-right"></div>
@@ -25,6 +27,16 @@
         <div class="row-bottom col-center"></div>
         <div class="row-bottom col-right"></div>
     </div>
+    <div class="modal" id="new-game">
+        <h2>Tic-Tac-Toe</h2>
+        <p>Hello and welcome, please enter the names of the two players and press start to begin.</p>
+        <button id="start-button">Start</button>
+    </div>
+    <div class="modal hidden" id="end-game-results">
+        <h2>Game Over!!!</h2>
+        <p id="gameover-text"></p>
+        <button id="restart-button">Restart</button>
+    </div>
     <div class="player-info playertwo" id="playertwo">
         <h2>Player 2</h2>
         <label for="playertwo-name">Your Name</label>
@@ -32,4 +44,5 @@
         <p>You are O's</p>
     </div>
 </body>
+
 </html>
